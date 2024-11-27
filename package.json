@@ -1,0 +1,36 @@
+{
+  "name": "@geeesy/type-aiflow",
+  "version": "1.0.0",
+  "description": "Types and Interfaces for AIFLOW Project",
+  "homepage": "https://github.com/geeesy/type-aiflow",
+  "bugs": {
+    "url": "https://github.com/geeesy/type-aiflow/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geeesy/type-aiflow.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vitest",
+    "test": "vitest run",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "build": "tsc",
+    "ci": "npm run build && npm run check-format && npm run check-exports && npm run lint && npm run test"
+  },
+  "author": "Dome Jantaphat <domemacintosh@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.17.0",
+    "prettier": "^3.4.1",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.6"
+  }
+}
