@@ -18,6 +18,7 @@
   "type": "module",
   "scripts": {
     "dev": "vitest",
+    "lint": "tsc",
     "test": "vitest run",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
