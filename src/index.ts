@@ -1,2 +1,2 @@
 export { add } from './utils.js';
-export * as Subscription from './type-subscription.js';
+export * as AiFlowCrmSubscription from './type-subscription.js';
