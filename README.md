@@ -1,5 +1,13 @@
 ## Types and Interfaces for AIFLOW Projects
 
+### Development
+
+- Run before commit to git
+
+```shell
+npm run ci
+```
+
 ### NPM
 
 - Run before publishing to npm
