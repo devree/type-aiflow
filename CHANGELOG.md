@@ -1,5 +1,11 @@
 # @geeesy/type-aiflow
 
+## 1.0.7
+
+### Patch Changes
+
+- f20d965: add media feature group
+
 ## 1.0.6
 
 ### Patch Changes
