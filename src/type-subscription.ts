@@ -3,6 +3,11 @@ export enum PackageType {
   COMPANY = 'COMPANY',
 }
 
+export const PackageTypeConfig = {
+  BUSINESS: 'BUSINESS',
+  COMPANY: 'COMPANY',
+};
+
 /**
  * Name of the package
  * @description
