@@ -22,8 +22,8 @@
     "test": "vitest run",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
-    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
-    "build": "tsc",
+    "check-exports": "attw --pack .",
+    "build": "tsup",
     "ci": "npm run build && npm run check-format && npm run check-exports && npm run lint && npm run test",
     "local-release": "changeset version && changeset publish",
     "prepublishOnly": "npm run ci"
@@ -34,7 +34,15 @@
     "@arethetypeswrong/cli": "^0.17.0",
     "@changesets/cli": "^2.27.10",
     "prettier": "^3.4.1",
+    "tsup": "^8.3.5",
     "typescript": "^5.7.2",
     "vitest": "^2.1.6"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    }
   }
 }
