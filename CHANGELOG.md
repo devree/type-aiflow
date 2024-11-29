@@ -1,5 +1,11 @@
 # @geeesy/type-aiflow
 
+## 1.0.5
+
+### Patch Changes
+
+- 1a7e615: test const instead of enum
+
 ## 1.0.4
 
 ### Patch Changes
