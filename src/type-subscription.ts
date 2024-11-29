@@ -28,7 +28,7 @@ export type TPackage = 'STANDARD' | 'PRO' | 'ENTERPRISE';
  * @example
  * LINE
  */
-export type TFeatureGroup = 'LINE' | 'BUSINESS';
+export type TFeatureGroup = 'LINE' | 'BUSINESS' | 'MEDIA';
 
 // ============================================================================
 //SECTION LINE
@@ -78,3 +78,18 @@ export interface ILimitCompany {
   [LimitTypeCompany.NUMBER_OF_COMPANY]: number;
 }
 // #endregion BUSINESS
+
+// ============================================================================
+//SECTION MEDIA
+// ============================================================================
+// #region MEDIA
+export type TFeatureMedia = 'FILE_MANAGER';
+
+export type TLimitTypeFileManager = 'FILE_STORAGE_SIZE';
+export enum LimitTypeFileManager {
+  FILE_STORAGE_SIZE_GB = 'FILE_STORAGE_SIZE_GB',
+}
+export interface ILimitFileManager {
+  [LimitTypeFileManager.FILE_STORAGE_SIZE_GB]: number;
+}
+// #endregion MEDIA
