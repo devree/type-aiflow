@@ -1,2 +1,2 @@
-export { add } from './utils';
-export * as AiFlowCrmSubscription from './type-subscription';
+export { add } from './utils.js';
+export * as AiFlowCrmSubscription from './type-subscription.js';
