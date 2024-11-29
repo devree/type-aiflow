@@ -1,5 +1,11 @@
 # @geeesy/type-aiflow
 
+## 1.0.4
+
+### Patch Changes
+
+- d56e6db: add dual publish both cjs and esm
+
 ## 1.0.3
 
 ### Patch Changes
