@@ -1,5 +1,11 @@
 # @geeesy/type-aiflow
 
+## 1.0.8
+
+### Patch Changes
+
+- 1df1a96: add enum on type and add feature group for chat
+
 ## 1.0.7
 
 ### Patch Changes
