@@ -22,13 +22,24 @@ export const PackageTypeConfig = {
  *    - [Limit]: 1
  */
 export type TPackage = 'STANDARD' | 'PRO' | 'ENTERPRISE';
+export enum Package {
+  STANDARD = 'STANDARD',
+  PRO = 'PRO',
+  ENTERPRISE = 'ENTERPRISE',
+}
 
 /**
  * Name of the feature group
  * @example
  * LINE
  */
-export type TFeatureGroup = 'LINE' | 'BUSINESS' | 'MEDIA';
+export type TFeatureGroup = 'LINE' | 'BUSINESS' | 'MEDIA' | 'CHAT';
+export enum FeatureGroup {
+  LINE = 'LINE',
+  BUSINESS = 'BUSINESS',
+  MEDIA = 'MEDIA',
+  CHAT = 'CHAT',
+}
 
 // ============================================================================
 //SECTION LINE
@@ -47,6 +58,15 @@ export type TFeatureLINE =
   | 'CHATBOT'
   | 'FRIENDS'
   | 'AGENT';
+export enum FeatureLINE {
+  LINE_CONNECT = 'LINE_CONNECT',
+  BROADCAST = 'BROADCAST',
+  LINE_LOGIN = 'LINE_LOGIN',
+  REPLY_TEMPLATE = 'REPLY_TEMPLATE',
+  CHATBOT = 'CHATBOT',
+  FRIENDS = 'FRIENDS',
+  AGENT = 'AGENT',
+}
 
 /**
  * Limit type name of LINE CONNECT
@@ -65,10 +85,24 @@ export interface ILimitLINEConnect {
 // #endregion LINE
 
 // ============================================================================
+//SECTION CHAT
+// ============================================================================
+// #region CHAT
+export type TFeatureChat = 'LINE';
+export enum FeatureChat {
+  LINE = 'LINE',
+}
+
+// #endregion CHAT
+
+// ============================================================================
 //SECTION BUSINESS
 // ============================================================================
 // #region BUSINESS
 export type TFeatureBusiness = 'COMPANY';
+export enum FeatureBusiness {
+  COMPANY = 'COMPANY',
+}
 
 export type TLimitTypeCompany = 'NUMBER_OF_COMPANY';
 export enum LimitTypeCompany {
@@ -84,6 +118,9 @@ export interface ILimitCompany {
 // ============================================================================
 // #region MEDIA
 export type TFeatureMedia = 'FILE_MANAGER';
+export enum FeatureMedia {
+  FILE_MANAGER = 'FILE_MANAGER',
+}
 
 export type TLimitTypeFileManager = 'FILE_STORAGE_SIZE';
 export enum LimitTypeFileManager {
