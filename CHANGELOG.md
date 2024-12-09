@@ -1,5 +1,11 @@
 # @geeesy/type-aiflow
 
+## 1.0.10
+
+### Patch Changes
+
+- 1e70653: fix on TFeatureAPI type
+
 ## 1.0.9
 
 ### Patch Changes
