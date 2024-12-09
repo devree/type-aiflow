@@ -136,7 +136,7 @@ export interface ILimitFileManager {
 //SECTION API
 // ============================================================================
 // #region API
-export type TFeatureAPI = 'FILE_MANAGER';
+export type TFeatureAPI = 'ADD_BLOCK_FRIEND' | 'TAG_SEGMENT';
 export enum FeatureAPI {
   ADD_BLOCK_FRIEND = 'ADD_BLOCK_FRIEND',
   TAG_SEGMENT = 'TAG_SEGMENT',
