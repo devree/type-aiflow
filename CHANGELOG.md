@@ -1,5 +1,11 @@
 # @geeesy/type-aiflow
 
+## 1.0.9
+
+### Patch Changes
+
+- 85c952b: add api feature group
+
 ## 1.0.8
 
 ### Patch Changes
