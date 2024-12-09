@@ -33,12 +33,13 @@ export enum Package {
  * @example
  * LINE
  */
-export type TFeatureGroup = 'LINE' | 'BUSINESS' | 'MEDIA' | 'CHAT';
+export type TFeatureGroup = 'LINE' | 'BUSINESS' | 'MEDIA' | 'CHAT' | 'API';
 export enum FeatureGroup {
   LINE = 'LINE',
   BUSINESS = 'BUSINESS',
   MEDIA = 'MEDIA',
   CHAT = 'CHAT',
+  API = 'API',
 }
 
 // ============================================================================
@@ -130,3 +131,15 @@ export interface ILimitFileManager {
   [LimitTypeFileManager.FILE_STORAGE_SIZE_GB]: number;
 }
 // #endregion MEDIA
+
+// ============================================================================
+//SECTION API
+// ============================================================================
+// #region API
+export type TFeatureAPI = 'FILE_MANAGER';
+export enum FeatureAPI {
+  ADD_BLOCK_FRIEND = 'ADD_BLOCK_FRIEND',
+  TAG_SEGMENT = 'TAG_SEGMENT',
+}
+
+// #endregion API
