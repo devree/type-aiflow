@@ -20,6 +20,12 @@ export enum BroadcastType {
   'PUSH_MESSAGE',
 }
 
+export enum BroadcastSubType {
+  'BROADCAST' = 'BROADCAST',
+  'MULTICAST' = 'MULTICAST',
+  'PUSH_MESSAGE' = 'PUSH_MESSAGE',
+}
+
 export enum messageType {
   'JSON',
   'TEXT',
