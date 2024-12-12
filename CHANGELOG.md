@@ -1,5 +1,11 @@
 # @geeesy/type-aiflow
 
+## 1.1.1
+
+### Patch Changes
+
+- c2f9f5a: fix on enum broadcast type
+
 ## 1.1.0
 
 ### Minor Changes
