@@ -1,5 +1,11 @@
 # @geeesy/type-aiflow
 
+## 1.1.0
+
+### Minor Changes
+
+- 30adb6d: add broadcast type
+
 ## 1.0.10
 
 ### Patch Changes
