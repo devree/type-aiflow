@@ -1,5 +1,11 @@
 # @geeesy/type-aiflow
 
+## 1.2.0
+
+### Minor Changes
+
+- 1294864: add sub-role type
+
 ## 1.1.1
 
 ### Patch Changes
