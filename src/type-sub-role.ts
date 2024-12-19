@@ -62,4 +62,5 @@ export type permissions =
   | ChatBotPermission
   | ContactPermission
   | FilePermission
+  | AgentPermission
   | TemplateReplyPermission;
