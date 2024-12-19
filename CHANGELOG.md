@@ -1,5 +1,11 @@
 # @geeesy/type-aiflow
 
+## 1.2.1
+
+### Patch Changes
+
+- 9244ea5: update on permission type
+
 ## 1.2.0
 
 ### Minor Changes
