@@ -4,6 +4,8 @@
 ![NPM Version](https://img.shields.io/npm/v/%40geeesy%2Ftype-aiflow)
 ![NPM Last Update](https://img.shields.io/npm/last-update/%40geeesy%2Ftype-aiflow)
 
+[NPM Package @geeesy/type-aiflow](https://www.npmjs.com/package/@geeesy/type-aiflow)
+
 ### Development
 
 - Run before commit to git
