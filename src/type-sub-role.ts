@@ -43,6 +43,10 @@ export enum FilePermission {
   'MANAGE' = 'file-manage',
 }
 
+export enum AgentPermission {
+  'MANAGE' = 'agent-manage',
+}
+
 export enum IAMPermission {
   'MANAGE' = 'iam-manage',
   'CREATE_STAFF' = 'iam-create-staff',
@@ -58,4 +62,5 @@ export type permissions =
   | ChatBotPermission
   | ContactPermission
   | FilePermission
+  | AgentPermission
   | TemplateReplyPermission;
