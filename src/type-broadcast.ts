@@ -6,7 +6,7 @@ export enum Status_Broadcast {
   'S4_FAIL',
   'S5_PROCESSING',
   'S6_ALMOST_SUCCESS',
-  'S7_MESSAGE_LIMIT'
+  'S7_MESSAGE_LIMIT',
 }
 
 export enum Receiver {
