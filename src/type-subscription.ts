@@ -83,6 +83,20 @@ export enum LimitTypeLINEConnect {
 export interface ILimitLINEConnect {
   [LimitTypeLINEConnect.NUMBER_OF_CHANNEL]: number;
 }
+
+/**
+ * Limit type name of AGENT
+ */
+export type TLimitTypeAgent = 'NUMBER_OF_SEGMENT_TAG';
+export enum LimitTypeAgent {
+  NUMBER_OF_SEGMENT_TAGS = 'NUMBER_OF_SEGMENT_TAG',
+}
+/**
+ * Limit of AGENT
+ */
+export interface ILimitAgent {
+  [LimitTypeAgent.NUMBER_OF_SEGMENT_TAGS]: number;
+}
 // #endregion LINE
 
 // ============================================================================
