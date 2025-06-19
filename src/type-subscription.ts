@@ -106,6 +106,7 @@ export interface ILimitAgent {
 export type TFeatureChat = 'LINE';
 export enum FeatureChat {
   LINE = 'LINE',
+  TEAM = 'TEAM'
 }
 
 // #endregion CHAT
