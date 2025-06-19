@@ -103,7 +103,7 @@ export interface ILimitAgent {
 //SECTION CHAT
 // ============================================================================
 // #region CHAT
-export type TFeatureChat = 'LINE';
+export type TFeatureChat = 'LINE' | 'TEAM';
 export enum FeatureChat {
   LINE = 'LINE',
   TEAM = 'TEAM',
