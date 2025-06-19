@@ -1,5 +1,11 @@
 # @geeesy/type-aiflow
 
+## 1.2.4
+
+### Patch Changes
+
+- f5dab9e: update team type
+
 ## 1.2.3
 
 ### Patch Changes
