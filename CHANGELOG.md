@@ -1,5 +1,11 @@
 # @geeesy/type-aiflow
 
+## 1.2.3
+
+### Patch Changes
+
+- 6676e7c: add more type
+
 ## 1.2.2
 
 ### Patch Changes
