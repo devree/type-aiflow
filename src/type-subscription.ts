@@ -33,13 +33,20 @@ export enum Package {
  * @example
  * LINE
  */
-export type TFeatureGroup = 'LINE' | 'BUSINESS' | 'MEDIA' | 'CHAT' | 'API';
+export type TFeatureGroup =
+  | 'LINE'
+  | 'BUSINESS'
+  | 'MEDIA'
+  | 'CHAT'
+  | 'API'
+  | 'ORDER';
 export enum FeatureGroup {
   LINE = 'LINE',
   BUSINESS = 'BUSINESS',
   MEDIA = 'MEDIA',
   CHAT = 'CHAT',
   API = 'API',
+  ORDER = 'ORDER',
 }
 
 // ============================================================================
@@ -158,3 +165,38 @@ export enum FeatureAPI {
 }
 
 // #endregion API
+
+// ============================================================================
+//SECTION ORDER
+// ============================================================================
+// #region ORDER
+export type TFeatureOrder = 'DELIVERY';
+export enum FeatureOrder {
+  DELIVERY = 'DELIVERY',
+}
+
+export type TLimitTypeOrderShop = 'NUMBER_OF_SHOP';
+export enum LimitTypeOrderShop {
+  NUMBER_OF_SHOP = 'NUMBER_OF_SHOP',
+}
+export interface ILimitOrderShop {
+  [LimitTypeOrderShop.NUMBER_OF_SHOP]: number;
+}
+
+export type TLimitTypeOrderItem = 'NUMBER_OF_ITEM';
+export enum LimitTypeOrderItem {
+  NUMBER_OF_ITEM = 'NUMBER_OF_ITEM',
+}
+export interface ILimitOrderItem {
+  [LimitTypeOrderItem.NUMBER_OF_ITEM]: number;
+}
+
+export type TLimitTypeOrderOption = 'NUMBER_OF_OPTION';
+export enum LimitTypeOrderOption {
+  NUMBER_OF_OPTION = 'NUMBER_OF_OPTION',
+}
+export interface ILimitOrderOption {
+  [LimitTypeOrderOption.NUMBER_OF_OPTION]: number;
+}
+
+// #endregion ORDER
