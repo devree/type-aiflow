@@ -1,5 +1,11 @@
 # @geeesy/type-aiflow
 
+## 1.2.2
+
+### Patch Changes
+
+- aefd721: Add more interface
+
 ## 1.2.1
 
 ### Patch Changes
