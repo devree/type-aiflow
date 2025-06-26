@@ -1,5 +1,11 @@
 # @geeesy/type-aiflow
 
+## 1.2.6
+
+### Patch Changes
+
+- db47658: add type
+
 ## 1.2.5
 
 ### Patch Changes
