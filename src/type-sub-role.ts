@@ -47,6 +47,14 @@ export enum AgentPermission {
   'MANAGE' = 'agent-manage',
 }
 
+export enum TeamPermission {
+  'MANAGE' = 'team-manage',
+}
+
+export enum DeliveryPermission {
+  'MANAGE' = 'delivery-manage',
+}
+
 export enum IAMPermission {
   'MANAGE' = 'iam-manage',
   'CREATE_STAFF' = 'iam-create-staff',
@@ -63,4 +71,6 @@ export type permissions =
   | ContactPermission
   | FilePermission
   | AgentPermission
+  | TeamPermission
+  | DeliveryPermission
   | TemplateReplyPermission;
