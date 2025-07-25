@@ -1,5 +1,11 @@
 # @geeesy/type-aiflow
 
+## 1.5.0
+
+### Minor Changes
+
+- b8e28af: update
+
 ## 1.4.0
 
 ### Minor Changes
