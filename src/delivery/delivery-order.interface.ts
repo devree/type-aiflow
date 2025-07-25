@@ -1,7 +1,16 @@
-import type { IDeliveryCustomer } from "./delivery-customer.interface.js";
-import type { IDeliveryShopOrder } from "./delivery-shop-order.interface.js";
-import type { OrderType, StatusOrder, StatusOrderCustomer, StatusOrderOfPayment, StatusOrderOfShipment, StatusOrderOfStock, StatusOrderSeller, StatusRefundOrder, StatusReturnOrder } from "./order.enum.js";
-
+import type { IDeliveryCustomer } from './delivery-customer.interface.js';
+import type { IDeliveryShopOrder } from './delivery-shop-order.interface.js';
+import type {
+  OrderType,
+  StatusOrder,
+  StatusOrderCustomer,
+  StatusOrderOfPayment,
+  StatusOrderOfShipment,
+  StatusOrderOfStock,
+  StatusOrderSeller,
+  StatusRefundOrder,
+  StatusReturnOrder,
+} from './order.enum.js';
 
 export interface OrderAddress {
   name: string;

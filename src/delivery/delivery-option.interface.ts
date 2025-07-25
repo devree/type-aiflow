@@ -1,6 +1,5 @@
-import type { IDeliveryOptionGroup } from "./delivery-option-group.interface.js";
-import type { ShopStatus } from "./order.enum.js";
-
+import type { IDeliveryOptionGroup } from './delivery-option-group.interface.js';
+import type { ShopStatus } from './order.enum.js';
 
 export interface IDeliveryOption {
   id: string;

@@ -1,4 +1,4 @@
-import type { IDeliveryCustomer } from "./delivery-customer.interface.js";
+import type { IDeliveryCustomer } from './delivery-customer.interface.js';
 
 export interface IDeliveryAddress {
   id: string;
