@@ -1,5 +1,11 @@
 # @geeesy/type-aiflow
 
+## 1.4.1
+
+### Patch Changes
+
+- 179a767: update interface
+
 ## 1.4.0
 
 ### Minor Changes
