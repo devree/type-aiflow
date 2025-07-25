@@ -1,5 +1,11 @@
 # @geeesy/type-aiflow
 
+## 1.3.0
+
+### Minor Changes
+
+- 04a398b: update
+
 ## 1.2.6
 
 ### Patch Changes
