@@ -1,5 +1,13 @@
 # @geeesy/type-aiflow
 
+## 1.6.0
+
+### Minor Changes
+
+- f4ba65d: update interface order
+- d7be412: update
+- dbe5625: update
+
 ## 1.5.0
 
 ### Minor Changes
