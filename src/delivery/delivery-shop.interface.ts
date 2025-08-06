@@ -1,9 +1,8 @@
-import type { IDeliveryOptionGroup } from "./delivery-option-group.interface.js";
-import type { IDeliveryProductGroup } from "./delivery-product-group.interface.js";
-import type { IDeliveryProduct } from "./delivery-product.interface.js";
-import type { IDeliveryShopOrder } from "./delivery-shop-order.interface.js";
-import type { ShopStatus } from "./order.enum.js";
-
+import type { IDeliveryOptionGroup } from './delivery-option-group.interface.js';
+import type { IDeliveryProductGroup } from './delivery-product-group.interface.js';
+import type { IDeliveryProduct } from './delivery-product.interface.js';
+import type { IDeliveryShopOrder } from './delivery-shop-order.interface.js';
+import type { ShopStatus } from './order.enum.js';
 
 export interface IDeliveryShop {
   id: string;
