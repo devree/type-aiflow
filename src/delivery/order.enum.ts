@@ -79,5 +79,4 @@ export enum StatusRefundOrder {
   'COMPLETED_REFUND',
 }
 
-
 export type OrderType = 'DELIVERY' | 'ONLINE';
