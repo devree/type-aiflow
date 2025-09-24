@@ -170,9 +170,10 @@ export enum FeatureAPI {
 //SECTION ORDER
 // ============================================================================
 // #region ORDER
-export type TFeatureOrder = 'DELIVERY';
+export type TFeatureOrder = 'DELIVERY' | 'COMMERCE';
 export enum FeatureOrder {
   DELIVERY = 'DELIVERY',
+  COMMERCE = 'COMMERCE',
 }
 
 export type TLimitTypeOrderShop = 'NUMBER_OF_SHOP';
