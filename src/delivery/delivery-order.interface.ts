@@ -1,5 +1,3 @@
-import type { IDeliveryCustomer } from './delivery-customer.interface.js';
-import type { IDeliveryShopOrder } from './delivery-shop-order.interface.js';
 import type {
   OrderType,
   StatusOrder,
@@ -11,6 +9,9 @@ import type {
   StatusRefundOrder,
   StatusReturnOrder,
 } from './order.enum.js';
+
+import type { IDeliveryCustomer } from './delivery-customer.interface.js';
+import type { IDeliveryShopOrder } from './delivery-shop-order.interface.js';
 
 export interface OrderAddress {
   name: string;
@@ -35,38 +36,69 @@ export interface PaymentAttachmentData {
 }
 
 export interface OrderTiming {
-  orderTime: string;
-  orderDate: string;
+  orderPlacedAt: Date;
+  orderPackedAt: Date;
+  orderShippedAt: Date;
+  orderCanceledAt: Date;
+  orderCompletedAt: Date;
+}
+
+export interface PaymentTiming {
+  awaitingPaymentAt: Date;
+  toConfirmAt: Date;
+  completedPaymentAt: Date;
+  toRefundAt: Date;
+  refundingAt: Date;
+  completedRefundAt: Date;
+}
+
+export interface ShipmentTiming {
+  awaitingShipmentAt: Date;
+  awaitingPickupAt: Date;
+  shippedAt: Date;
+  completedShipmentAt: Date;
+  toReturnAt: Date;
+  awaitingReturnAt: Date;
+  returningAt: Date;
+  completedReturnAt: Date;
+}
+
+export interface Location {
+  lat: number;
+  lng: number;
+  distanceInM: number;
 }
 
 export interface IDeliveryOrder {
   id: string;
   orderNo: string;
-  note: string;
-  address: OrderAddress;
+  noteAdmin?: string;
+  noteUser?: string;
+  statusOrder: StatusOrder;
+  statusOrderOnSeller: StatusOrderSeller;
+  statusOrderOnBuyer: StatusOrderCustomer;
+  statusOrderOfPayment: StatusOrderOfPayment;
+  statusOrderOfShipment?: StatusOrderOfShipment;
+  statusOrderOfStock?: StatusOrderOfStock;
+  statusReturnOrder?: StatusReturnOrder;
+  statusRefundOrder?: StatusRefundOrder;
+  orderType: OrderType;
   createdAt: Date;
   createdBy: string;
   updatedAt: Date;
   updatedBy: string;
-  orderType: OrderType;
-  status: StatusOrder;
-  statusSeller: StatusOrderSeller;
-  statusCustomer: StatusOrderCustomer;
-  statusOfPayment: StatusOrderOfPayment;
-  statusOfShipment: StatusOrderOfShipment;
-  statusOfStock: StatusOrderOfStock;
-  statusRefundOrder: StatusRefundOrder;
-  statusReturnOrder: StatusReturnOrder;
+  shippingCost: number;
+  orderAmount: number;
   totalAmount: number;
-  totalQuantity: number;
-  totalShippingCost: number;
-  totalProductCost: number;
-  totalWithoutShipping: number;
-  paymentAttachmentData: PaymentAttachmentData;
-  orderTiming: OrderTiming;
-  deliveryCustomer: IDeliveryCustomer;
-  deliveryShopOrders: IDeliveryShopOrder[];
-  moduleConfig: any;
+  address?: OrderAddress | null;
+  paymentAttachmentData?: PaymentAttachmentData | null;
+  orderTiming?: OrderTiming | null;
+  paymentTiming?: PaymentTiming | null;
+  shipmentTiming?: ShipmentTiming | null;
+  deliveryData?: Location | null;
+  moduleConfig?: any;
+  deliveryCustomer?: IDeliveryCustomer;
+  deliveryShopOrders?: IDeliveryShopOrder[];
 }
 
 // Product Option Interfaces based on DTO structure
@@ -103,25 +135,58 @@ export interface DeliveryShopOrderData {
 }
 
 export interface ICreateDeliveryOrder {
-  deliveryShopOrders: DeliveryShopOrderData[];
-  shippingCost: number;
-  orderAmount?: number;
-  totalAmount?: number;
-  customerId: string;
-  moduleConfigId: string;
-  address?: OrderAddress;
+  orderNo: string;
   noteAdmin?: string;
   noteUser?: string;
-}
-
-export interface IUpdateDeliveryOrder {
-  deliveryShopOrders?: DeliveryShopOrderData[];
+  statusOrder?: StatusOrder;
+  statusOrderOnSeller?: StatusOrderSeller;
+  statusOrderOnBuyer?: StatusOrderCustomer;
+  statusOrderOfPayment?: StatusOrderOfPayment;
+  statusOrderOfShipment?: StatusOrderOfShipment;
+  statusOrderOfStock?: StatusOrderOfStock;
+  statusReturnOrder?: StatusReturnOrder;
+  statusRefundOrder?: StatusRefundOrder;
+  orderType: OrderType;
+  createdBy: string;
+  updatedBy: string;
   shippingCost?: number;
   orderAmount?: number;
   totalAmount?: number;
-  customerId?: string;
-  moduleConfigId?: string;
   address?: OrderAddress;
+  paymentAttachmentData?: PaymentAttachmentData;
+  orderTiming?: OrderTiming;
+  paymentTiming?: PaymentTiming;
+  shipmentTiming?: ShipmentTiming;
+  deliveryData?: Location;
+  deliveryShopOrders?: DeliveryShopOrderData[];
+  customerId: string;
+  moduleConfigId: string;
+}
+
+export interface IUpdateDeliveryOrder {
+  orderNo?: string;
   noteAdmin?: string;
   noteUser?: string;
+  statusOrder?: StatusOrder;
+  statusOrderOnSeller?: StatusOrderSeller;
+  statusOrderOnBuyer?: StatusOrderCustomer;
+  statusOrderOfPayment?: StatusOrderOfPayment;
+  statusOrderOfShipment?: StatusOrderOfShipment;
+  statusOrderOfStock?: StatusOrderOfStock;
+  statusReturnOrder?: StatusReturnOrder;
+  statusRefundOrder?: StatusRefundOrder;
+  orderType?: OrderType;
+  updatedBy: string;
+  shippingCost?: number;
+  orderAmount?: number;
+  totalAmount?: number;
+  address?: OrderAddress;
+  paymentAttachmentData?: PaymentAttachmentData;
+  orderTiming?: OrderTiming;
+  paymentTiming?: PaymentTiming;
+  shipmentTiming?: ShipmentTiming;
+  deliveryData?: Location;
+  deliveryShopOrders?: DeliveryShopOrderData[];
+  customerId?: string;
+  moduleConfigId?: string;
 }
