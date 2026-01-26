@@ -67,7 +67,7 @@ export enum IAMPermission {
 }
 
 export enum SettingPermission {
-  'MANAGE' = 'setting-manage',
+  'MANAGE' = 'setting-manage', // Menu Setting
 }
 
 export type permissions =
