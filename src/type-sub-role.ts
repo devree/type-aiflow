@@ -58,6 +58,14 @@ export enum DeliveryPermission {
 
 export enum CommercePermission {
   'MANAGE' = 'commerce-manage',
+  'MANAGE_METRIC_SALE_PERFORMANCE' = 'commerce-manage-metric-sale-performance',
+  'MANAGE_METRIC_TOTAL_ORDER' = 'commerce-manage-metric-total-order',
+  'MANAGE_METRIC_AVG_REVENUE' = 'commerce-manage-metric-avg-revenue',
+  'MANAGE_METRIC_AVG_ITEM_ORDER' = 'commerce-manage-metric-avg-item-order',
+  'MANAGE_CHART_TOTAL_REVENUE' = 'commerce-manage-chart-total-revenue',
+  'MANAGE_CHART_POPULAR_PRODUCT' = 'commerce-manage-chart-popular-product',
+  'MANAGE_CHART_AVG_ORDER_VALUE' = 'commerce-manage-chart-avg-order-value',
+  'MANAGE_CHART_AVG_SALE' = 'commerce-manage-chart-avg-sale',
 }
 
 export enum IAMPermission {
@@ -67,7 +75,7 @@ export enum IAMPermission {
 }
 
 export enum SettingPermission {
-  'MANAGE' = 'setting-manage',
+  'MANAGE' = 'setting-manage', // Menu Setting
 }
 
 export type permissions =
