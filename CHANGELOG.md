@@ -1,5 +1,11 @@
 # @geeesy/type-aiflow
 
+## 2.0.4
+
+### Patch Changes
+
+- dd61e9a: Update interface
+
 ## 2.0.3
 
 ### Patch Changes
