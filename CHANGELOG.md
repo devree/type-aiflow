@@ -1,5 +1,12 @@
 # @geeesy/type-aiflow
 
+## 2.1.0
+
+### Minor Changes
+
+- af4d263: update sub-role interface
+- acf9219: update sub-role interface
+
 ## 2.0.4
 
 ### Patch Changes
