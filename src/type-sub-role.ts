@@ -58,14 +58,18 @@ export enum DeliveryPermission {
 
 export enum CommercePermission {
   'MANAGE' = 'commerce-manage',
-  'MANAGE_METRIC_SALE_PERFORMANCE' = 'commerce-manage-metric-sale-performance',
-  'MANAGE_METRIC_TOTAL_ORDER' = 'commerce-manage-metric-total-order',
-  'MANAGE_METRIC_AVG_REVENUE' = 'commerce-manage-metric-avg-revenue',
-  'MANAGE_METRIC_AVG_ITEM_ORDER' = 'commerce-manage-metric-avg-item-order',
-  'MANAGE_CHART_TOTAL_REVENUE' = 'commerce-manage-chart-total-revenue',
-  'MANAGE_CHART_POPULAR_PRODUCT' = 'commerce-manage-chart-popular-product',
-  'MANAGE_CHART_AVG_ORDER_VALUE' = 'commerce-manage-chart-avg-order-value',
-  'MANAGE_CHART_AVG_SALE' = 'commerce-manage-chart-avg-sale',
+}
+
+export enum DashboardPermission {
+  'MANAGE' = 'dashboard-manage',
+  'MANAGE_COMMERCE_METRIC_SALE_PERFORMANCE' = 'dashboard-manage-commerce-metric-sale-performance',
+  'MANAGE_COMMERCE_METRIC_TOTAL_ORDER' = 'dashboard-manage-commerce-metric-total-order',
+  'MANAGE_COMMERCE_METRIC_AVG_REVENUE' = 'dashboard-manage-commerce-metric-avg-revenue',
+  'MANAGE_COMMERCE_METRIC_AVG_ITEM_ORDER' = 'dashboard-manage-commerce-metric-avg-item-order',
+  'MANAGE_COMMERCE_CHART_TOTAL_REVENUE' = 'dashboard-manage-commerce-chart-total-revenue',
+  'MANAGE_COMMERCE_CHART_POPULAR_PRODUCT' = 'dashboard-manage-commerce-chart-popular-product',
+  'MANAGE_COMMERCE_CHART_AVG_ORDER_VALUE' = 'dashboard-manage-commerce-chart-avg-order-value',
+  'MANAGE_COMMERCE_CHART_AVG_SALE' = 'dashboard-manage-commerce-chart-avg-sale',
 }
 
 export enum IAMPermission {
