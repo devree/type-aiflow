@@ -65,7 +65,7 @@ export enum DashboardPermission {
   'MANAGE_COMMERCE_METRIC_SALE_PERFORMANCE' = 'dashboard-manage-commerce-metric-sale-performance',
   'MANAGE_COMMERCE_METRIC_TOTAL_ORDER' = 'dashboard-manage-commerce-metric-total-order',
   'MANAGE_COMMERCE_METRIC_AVG_REVENUE' = 'dashboard-manage-commerce-metric-avg-revenue',
-  'MANAGE_COMMERCE_METRIC_AVG_ITEM_ORDER' = 'dashboard-manage-commerce-metric-avg-item-order',
+  'MANAGE_COMMERCE_METRIC_AVG_ITEM_ORDER' = 'dashboard-manage-commerce-metric-avg-order-qty',
   'MANAGE_COMMERCE_CHART_TOTAL_REVENUE' = 'dashboard-manage-commerce-chart-total-revenue',
   'MANAGE_COMMERCE_CHART_POPULAR_PRODUCT' = 'dashboard-manage-commerce-chart-popular-product',
   'MANAGE_COMMERCE_CHART_AVG_ORDER_VALUE' = 'dashboard-manage-commerce-chart-avg-order-value',
